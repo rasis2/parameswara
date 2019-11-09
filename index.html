@@ -198,8 +198,7 @@ body {
   background-image: url("https://github.com/rasis2/parameswara/blob/master/jong.jpg?raw=true");
   background-attachment: fixed; 
   background-repeat: no-repeat;
-  background-size: 100%;
-  height: auto;
+  background-position: center;
 }
 
 #tajukk {
@@ -208,6 +207,7 @@ body {
   text-align: center;
   color: black;
   right: 0; left: 0;
+  position: sticky;
 }
 /* Main passage - end */
 
@@ -225,7 +225,8 @@ div.transbox p {
   padding: 15%;
   padding-left: 80px;
 }
-/*Tex Box - end*/</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* Enable outgoing opacity-based passage transitions. */
+/*Tex Box - end*/
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* Enable outgoing opacity-based passage transitions. */
 config.passages.transitionOut = "opacity";
 
 /* Disable history control functions */
@@ -233,6 +234,7 @@ Config.history.controls = false;
 
 //$('#ui-bar').remove();
 //$(document.head).find('#style-ui-bar').remove();
+
 
 
 </script><tw-passagedata pid="1" name="Main" tags="bbar" position="220,32" size="100,100">&lt;&lt;audio mula play&gt;&gt;
@@ -351,7 +353,7 @@ Semasa belayar, kamu ternampak:
 	  &lt;&lt;/if&gt;&gt;
 	  &lt;br&gt;
   &lt;&lt;/for&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Show Outcome - Kapal" tags="" position="506.6666666666667,310" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Show Outcome - Kapal" tags="" position="506,310" size="100,100">&lt;&lt;nobr&gt;&gt;
   &lt;&lt;set _percentage to random(1, 10) &gt;&gt;
 
   &lt;&lt;if _percentage gte 7&gt;&gt;
@@ -393,7 +395,7 @@ Semasa belayar, kamu ternampak:
 	  &lt;&lt;include &quot;HUD&quot;&gt;&gt;
   &lt;&lt;/replace&gt;&gt;
   
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Show Outcome - Pulau" tags="" position="504.3333333333333,200" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Show Outcome - Pulau" tags="" position="504,200" size="100,100">&lt;&lt;nobr&gt;&gt;
   &lt;&lt;set _percentage to random(1, 10)&gt;&gt;
   
   &lt;&lt;if _percentage eq 1&gt;&gt;
@@ -431,7 +433,7 @@ Semasa belayar, kamu ternampak:
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="HUD" tags="" position="153,285" size="100,100">Keadaan Kapal: &lt;&lt;include &quot;Color Kapal&quot;&gt;&gt;
 Baki Hari Bekalan Makanan: &lt;&lt;include &quot;Color Makanan&quot;&gt;&gt;
 Hari Pelayaran ke Temasik: &lt;span class=&quot;blue&quot;&gt;$numberOfJumpsLeft&lt;/span&gt;
-&lt;&lt;include &quot;Check Status&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Hancur" tags="" position="744.3333333333334,308" size="100,100">&lt;div class=&quot;transbox&quot;&gt;&lt;&lt;audio argh play&gt;&gt;
+&lt;&lt;include &quot;Check Status&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Hancur" tags="" position="744,308" size="100,100">&lt;div class=&quot;transbox&quot;&gt;&lt;&lt;audio argh play&gt;&gt;
 Kapal kamu hancur diserang.
 
 &quot;Menyesal beta percayakan kamu!!&quot; jerit Parameswara sebelum lemas di lautan yang luas.
@@ -483,7 +485,7 @@ Hari Pelayaran ke Temasik: &lt;span class=&quot;blue&quot;&gt;$numberOfJumpsLeft
 	&lt;&lt;if $numberOfJumpsLeft lte 0&gt;&gt;
 		&lt;&lt;goto &quot;Selamat&quot;&gt;&gt;
 	&lt;&lt;/if&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="StoryBanner" tags="" position="43,406" size="100,100">&lt;br&gt;&lt;img src=&quot;http://1.bp.blogspot.com/_a7ulfv3gEAA/Swz-Ao5cKTI/AAAAAAAAAew/selgVjJQLWQ/s1600/Tanjak_Preview.png&quot; style=&quot;width:200px;height:200px;&quot;&gt;</tw-passagedata><tw-passagedata pid="15" name="StorySubtitle" tags="" position="149,406" size="100,100">versi 0.1.9</tw-passagedata><tw-passagedata pid="16" name="StoryAuthor" tags="" position="258,403.3333333333333" size="100,100">Karya Araduas Rasis</tw-passagedata><tw-passagedata pid="17" name="StoryShare" tags="" position="368.6666666666667,403.6666666666667" size="100,100">[[Facebook|https://www.facebook.com/]]
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="StoryBanner" tags="" position="43,406" size="100,100">&lt;br&gt;&lt;img src=&quot;http://1.bp.blogspot.com/_a7ulfv3gEAA/Swz-Ao5cKTI/AAAAAAAAAew/selgVjJQLWQ/s1600/Tanjak_Preview.png&quot; style=&quot;width:200px;height:200px;&quot;&gt;</tw-passagedata><tw-passagedata pid="15" name="StorySubtitle" tags="" position="149,406" size="100,100">versi 0.1.9</tw-passagedata><tw-passagedata pid="16" name="StoryAuthor" tags="" position="258,403" size="100,100">Karya Araduas Rasis</tw-passagedata><tw-passagedata pid="17" name="StoryShare" tags="" position="368,403" size="100,100">[[Facebook|https://www.facebook.com/]]
 [[Twitter|https://www.twitter.com/]]</tw-passagedata><tw-passagedata pid="18" name="Typewriter" tags="widget" position="49,528" size="100,100">\&lt;&lt;widget typewriter&gt;&gt;
 \	&lt;!-- Create a SPAN with an ID --&gt;
 \  &lt;span id=&quot;typewriter&quot;&gt;&lt;/span&gt;
@@ -697,7 +699,7 @@ Semasa belayar, kamu bertembung dengan bala tentera Kora-kora Majapahit:
   &lt;&lt;/if&gt;&gt; 
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="PassageFooter" tags="" position="265,526" size="100,100">&lt;&lt;if tags().includes(&quot;bbar&quot;)&gt;&gt;
 
-&lt;div id=&quot;bottombar&quot;&gt;&lt;div id=&quot;bbblock&quot;&gt;&lt;div id=&quot;bbtext&quot;&gt;&lt;&lt;link &quot;Skip&quot;&gt;&gt;&lt;&lt;goto &quot;Pelayaran 1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="StoryTitle" tags="" position="45.333333333333336,27.333333333333336" size="100,100">&lt;link href=&quot;https://fonts.googleapis.com/css?family=Tangerine&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;div id=&quot;bottombar&quot;&gt;&lt;div id=&quot;bbblock&quot;&gt;&lt;div id=&quot;bbtext&quot;&gt;&lt;&lt;link &quot;Skip&quot;&gt;&gt;&lt;&lt;goto &quot;Pelayaran 1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="StoryTitle" tags="" position="45,27" size="100,100">&lt;link href=&quot;https://fonts.googleapis.com/css?family=Tangerine&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
 &lt;link href=&quot;https://fonts.googleapis.com/css?family=Yeon+Sung&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
 &lt;div id=&#39;tajukk&#39;&gt;
 Parameswara: Pelayaran Bersejarah
